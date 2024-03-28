@@ -2,6 +2,8 @@ from flask import Flask,render_template,request
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import nltk
 nltk.download("vader_lexicon")
+nltk.download('punkt')
+
 
 # ==============Hugging face's transformers library and pre trained model RoBERTa Model=======
 # from transformers import AutoTokenizer,AutoConfig, AutoModelForSequenceClassification
