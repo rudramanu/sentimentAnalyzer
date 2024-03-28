@@ -69,6 +69,7 @@ def main():
     return render_template("index.html", negative_percentage=negative_percentage, neutral_percentage=neutral_percentage, positive_percentage=positive_percentage, overall_percentage=overall_percentage, sentiment=sentiment, colour=colour)   
   except Exception as e:
      print(f"Error processing sentiment: {e}")   
+     return "An error occurred while processing the sentiment analysis.", 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True)
