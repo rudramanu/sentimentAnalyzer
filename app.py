@@ -68,4 +68,4 @@ def main():
   return render_template("index.html", negative_percentage=negative_percentage, neutral_percentage=neutral_percentage, positive_percentage=positive_percentage, overall_percentage=overall_percentage, sentiment=sentiment, colour=colour)      
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(host='0.0.0.0', port=9700,debug=True)
